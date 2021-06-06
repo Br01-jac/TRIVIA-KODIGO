@@ -25,7 +25,7 @@ const cuestionario = [
         respuesta: ["Encontrar al Depredator", "La cantidad de guerrilleros a enfrentarse", "El mal estado de el terreno en la jungla", "No llevaron bloqueador solar"]
     },
     {
-        pregunta: "Cauantos sobrevivientes quedan al final de la pelicula?",
+        pregunta: "Cuantos sobrevivientes quedan al final de la pelicula?",
         respuesta: ["solamente 2", "ninguno", "todos los que hacian  la mision", "solamente 4"]
     },
     {
