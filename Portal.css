@@ -1,0 +1,740 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    height: 15vh;
+
+
+}
+
+.titulo-juego {
+    color: white;
+    text-shadow: 2px 1px 2px #ffffff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
+}
+
+.titulo {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    height: 15vh;
+    color: rgb(255, 255, 255);
+    background-color: #00000088;
+    font-size: 1.2em;
+    box-shadow: 1px 5px 10px #00000088;
+    font-family: 'Press Start 2P', cursive;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    background-image: url("fotos/fondoprincipal.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+
+section {
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bienvenida-usuario {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    background-color: #00000099;
+    width: 40%;
+    height: 60vh;
+    border-radius: 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.bienvenida-usuario h2 {
+    font-size: 2.5em;
+
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+    margin-bottom: 10px;
+}
+
+.seleccionar-juego {
+    margin: 0;
+    width: 60%;
+    height: 90%;
+    background-color: #00000099;
+    border-radius: 15px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bienvenida-usuario h3 {
+    font-size: 1.6em;
+    margin-bottom: 15px;
+}
+
+input {
+    height: 40px;
+    width: 40%;
+    text-align: center;
+    border: navajowhite;
+    background-color: #ffffff69;
+    border-radius: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2.2em;
+    color: rgb(255, 255, 255);
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.boton-regreso {
+    margin-top: 20px;
+    height: 35px;
+    width: 25%;
+    border-radius: 5px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.7em;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #ffffffd2;
+    cursor: pointer;
+}
+
+.boton-regreso:hover {
+    background-color: #ffffff;
+
+}
+
+a {
+    margin-top: 20px;
+    height: 35px;
+    width: 25%;
+    border-radius: 5px;
+    border: none;
+    display: flex;
+    visibility: hidden;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #ffffffd2;
+    cursor: pointer;
+}
+
+a:hover {
+    background-color: #ffffff;
+
+}
+
+.bienvenida-usuario i {
+    margin-bottom: 10px;
+    font-size: 4.5em;
+}
+
+.prueba {
+    background-color: brown;
+}
+
+.evaluar-nombre {
+    width: 80%;
+
+    display: flex;
+    justify-content: center;
+}
+
+.evaluar-nombre i {
+    font-size: 2.5em;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.seleccionar-juego {
+    margin: 0;
+    width: 60%;
+    height: 90%;
+    background-color: #00000099;
+    border-radius: 15px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.seleccionar-juego-h2 {
+
+    color: white;
+    font-size: 3.5em;
+    text-shadow: 2px 1px 2px #ffffff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.boton-juego {
+
+    color: black;
+    margin-top: 20px;
+    height: 60px;
+    width: 75%;
+    border-radius: 5px;
+    border: none;
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #ffffffd2;
+    cursor: pointer;
+}
+
+.boton-juego:hover {
+    background-color: #00000099;
+    color: white;
+}
+
+.seleccionar-juego-h3 {
+    color: white;
+    font-size: 2.4em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+@media (max-width: 1150px) {
+    .bienvenida-usuario {
+        width: 50%;
+
+    }
+
+    .bienvenida-usuario h2 {
+        font-size: 1.9em;
+    }
+
+}
+
+@media(max-width: 740px) {
+    .bienvenida-usuario h2 {
+        font-size: 1.9em;
+    }
+
+    .bienvenida-usuario h3 {
+        font-size: 1.5em;
+        margin-bottom: 15px;
+    }
+
+    .bienvenida-usuario {
+        width: 60%;
+    }
+
+    input {
+        width: 60%;
+        font-size: 1.3em;
+    }
+
+}
+
+@media(max-width: 600px) {
+    .bienvenida-usuario h2 {
+        font-size: 1.9em;
+    }
+
+    .bienvenida-usuario h3 {
+        font-size: 1.6em;
+        margin-bottom: 15px;
+    }
+
+    input {
+        width: 60%;
+        font-size: 1.3em;
+    }
+
+    .bienvenida-usuario {
+        width: 80%;
+
+    }
+
+    .bienvenida-usuario h2 {
+        font-size: 2em;
+    }
+
+
+}
+
+@media(max-width: 580px) {
+    .bienvenida-usuario {
+        width: 90%;
+    }
+
+    .bienvenida-usuario h2 {
+        font-size: 2.3em;
+    }
+
+    .bienvenida-usuario h3 {
+        font-size: 1.4em;
+    }
+
+    a {
+        font-size: 1em;
+        width: 40%;
+    }
+
+    .boton-juego {
+        font-size: 1.2em;
+
+    }
+
+}
+
+@media only screen and (max-device-width: 1024px) {
+    .titulo {
+        font-size: 35px;
+    }
+
+    .boton-juego {
+        height: 110px;
+        margin-bottom: 20px;
+        font-size: 40px;
+    }
+
+    .bienvenida-usuario {
+        text-align: center;
+        width: 80%;
+        height: 70vh;
+
+    }
+
+    .bienvenida-usuario>i {
+        font-size: 7.2em;
+    }
+
+    .bienvenida-usuario h4 {
+        font-size: 60px;
+    }
+
+    .bienvenida-usuario h2 {
+        font-size: 65px;
+    }
+
+    .bienvenida-usuario h3 {
+        font-size: 50px;
+    }
+
+    .boton-regreso {
+        height: 100px;
+        width: 40%;
+        font-size: 40px;
+    }
+
+    .bienvenida-usuario>a {
+        height: 90px;
+        width: 50%;
+        font-size: 40px;
+    }
+
+    .evaluar-nombre>i {
+        font-size: 90px;
+    }
+
+    .evaluar-nombre>input {
+        height: 90px;
+        font-size: 40px;
+        width: 60%;
+    }
+
+
+}
+
+@media only screen and (max-device-width: 768px) {
+    .titulo {
+        font-size: 25px;
+    }
+
+    .boton-juego {
+        height: 90px;
+        margin-bottom: 20px;
+        font-size: 30px;
+    }
+
+    .bienvenida-usuario {
+        text-align: center;
+        width: 80%;
+        height: 70vh;
+
+    }
+
+    .bienvenida-usuario>i {
+        font-size: 6.2em;
+    }
+
+    .bienvenida-usuario h4 {
+        font-size: 35px;
+    }
+
+    .bienvenida-usuario h2 {
+        font-size: 50px;
+    }
+
+    .bienvenida-usuario h3 {
+        font-size: 40px;
+    }
+
+    .boton-regreso {
+        height: 70px;
+        width: 40%;
+        font-size: 30px;
+    }
+
+    .bienvenida-usuario>a {
+        height: 80px;
+        width: 50%;
+        font-size: 30px;
+    }
+
+    .evaluar-nombre>i {
+        font-size: 80px;
+    }
+
+    .evaluar-nombre>input {
+        height: 80px;
+        font-size: 40px;
+        width: 60%;
+    }
+
+
+}
+
+@media only screen and (max-device-width: 540px) {
+    .titulo {
+        font-size: 15px;
+    }
+
+    .bienvenida-usuario {
+        text-align: center;
+    }
+
+    .boton-juego {
+        height: 60px;
+        margin-bottom: 0;
+        font-size: 20px;
+    }
+
+    .bienvenida-usuario>i {
+        font-size: 4.5em;
+    }
+
+    .bienvenida-usuario h2 {
+        font-size: 35px;
+    }
+
+    .bienvenida-usuario h4 {
+        font-size: 28px;
+    }
+
+    .bienvenida-usuario h3 {
+        font-size: 28px;
+    }
+
+    .boton-regreso {
+        height: 50px;
+        width: 50%;
+        font-size: 25px;
+    }
+
+    .bienvenida-usuario>a {
+        height: 50px;
+        font-size: 25px;
+    }
+
+    .evaluar-nombre>i {
+        font-size: 45px;
+    }
+
+    .evaluar-nombre>input {
+        height: 45px;
+        font-size: 25px;
+    }
+
+
+}
+
+@media only screen and (max-device-width: 414px) {
+    .titulo {
+        font-size: 15px;
+    }
+
+    .bienvenida-usuario {
+        text-align: center;
+        height: 60vh;
+    }
+
+    .bienvenida-usuario>i {
+        font-size: 4.1em;
+    }
+
+    .bienvenida-usuario h4 {
+        font-size: 25px;
+    }
+
+    .bienvenida-usuario h2 {
+        font-size: 25px;
+    }
+
+    .bienvenida-usuario h3 {
+        font-size: 20px;
+    }
+
+    .boton-regreso {
+        height: 40px;
+        width: 40%;
+        font-size: 20px;
+    }
+
+    .bienvenida-usuario>a {
+        height: 40px;
+        font-size: 20px;
+    }
+
+    .evaluar-nombre>i {
+        font-size: 40px;
+    }
+
+    .evaluar-nombre>input {
+        height: 40px;
+        font-size: 20px;
+    }
+
+
+}
+
+@media only screen and (max-device-width: 411px) {
+    .titulo {
+        font-size: 14px;
+    }
+
+    .bienvenida-usuario {
+        text-align: center;
+        height: 55vh;
+    }
+
+    .bienvenida-usuario h4 {
+        font-size: 25px;
+    }
+
+    .bienvenida-usuario h2 {
+        font-size: 26px;
+    }
+
+    .bienvenida-usuario h3 {
+        font-size: 23px;
+    }
+
+    .boton-regreso {
+        height: 50px;
+        width: 30%;
+    }
+
+    .bienvenida-usuario>a {
+        height: 50px;
+        font-size: 20px;
+    }
+
+    .evaluar-nombre>i {
+        font-size: 50px;
+    }
+
+    .evaluar-nombre>input {
+        height: 50px;
+        font-size: 20px;
+    }
+
+}
+
+@media only screen and (max-device-width: 375px) {
+    .titulo {
+        font-size: 14px;
+    }
+
+    .bienvenida-usuario {
+        text-align: center;
+
+    }
+
+    .bienvenida-usuario>i {
+        font-size: 3.5em;
+    }
+
+    .bienvenida-usuario h2 {
+        font-size: 25px;
+    }
+
+    .bienvenida-usuario h3 {
+        font-size: 20px;
+    }
+
+    .boton-regreso {
+        height: 50px;
+        width: 40%;
+    }
+
+    .bienvenida-usuario>a {
+        height: 40px;
+        font-size: 18px;
+    }
+
+    .evaluar-nombre>i {
+        font-size: 35px;
+    }
+
+    .evaluar-nombre>input {
+        height: 35px;
+        font-size: 20px;
+    }
+
+
+}
+
+@media only screen and (max-device-width: 360px) {
+    .titulo {
+        font-size: 12px;
+    }
+
+    .boton-juego {
+        height: 45px;
+        font-size: 18px;
+    }
+
+    .bienvenida-usuario {
+        text-align: center;
+
+    }
+
+    .bienvenida-usuario h2 {
+        font-size: 24px;
+    }
+
+    .boton-regreso {
+        height: 50px;
+        width: 30%;
+    }
+
+
+}
+
+@media only screen and (max-device-width: 320px) {
+    .titulo {
+        font-size: 12px;
+    }
+
+    .bienvenida-usuario {
+        text-align: center;
+    }
+
+    .bienvenida-usuario>i {
+        font-size: 3em;
+    }
+
+    .bienvenida-usuario h4 {
+        font-size: 21px;
+    }
+
+    .bienvenida-usuario h2 {
+        font-size: 21px;
+    }
+
+    .bienvenida-usuario h3 {
+        font-size: 18px;
+    }
+
+    .boton-regreso {
+        height: 40px;
+        width: 40%;
+        font-size: 18px;
+    }
+
+    .bienvenida-usuario>a {
+        height: 35px;
+        font-size: 18px;
+    }
+
+    .evaluar-nombre>i {
+        font-size: 35px;
+    }
+
+    .evaluar-nombre>input {
+        height: 35px;
+        font-size: 20px;
+    }
+
+}
+
+@media only screen and (max-device-width: 280px) {
+    .titulo {
+        font-size: 9px;
+    }
+
+    .bienvenida-usuario {
+        text-align: center;
+        width: 95%;
+    }
+
+    .bienvenida-usuario>i {
+        font-size: 2.8em;
+    }
+
+    .bienvenida-usuario h2 {
+        font-size: 21px;
+    }
+
+    .bienvenida-usuario h4 {
+        font-size: 19px;
+    }
+
+    .bienvenida-usuario h3 {
+        font-size: 19px;
+    }
+
+    .boton-regreso {
+        height: 40px;
+        width: 50%;
+        font-size: 20px;
+    }
+
+    .bienvenida-usuario>a {
+        height: 40px;
+        font-size: 15px;
+    }
+
+    .evaluar-nombre>i {
+        font-size: 35px;
+    }
+
+    .evaluar-nombre>input {
+        height: 35px;
+        font-size: 20px;
+    }
+
+
+}

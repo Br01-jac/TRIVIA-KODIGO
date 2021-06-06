@@ -1,0 +1,555 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    height: 15vh;
+
+
+}
+
+.titulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    height: 15vh;
+    color: rgb(255, 255, 255);
+    font-size: 1.5em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    background-image: url("fotos/juego2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.indicadores {
+    color: white;
+    font-size: 1em;
+}
+
+.control-botones {
+
+    height: 55px;
+    width: 20%;
+    border-radius: 5px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #ffffffd2;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+section {
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-preguntas {
+    padding: 20px;
+    width: 50%;
+    height: 60vh;
+    background-color: #00000099;
+    border-radius: 20px 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+
+
+}
+
+.contenedor-preguntas h2,
+div {
+    color: white;
+    font-size: 1.5em;
+}
+
+button {
+    height: 60px;
+    margin: 10px;
+    width: 70%;
+    border: none;
+    font-size: 0.6em;
+    background: #47474799;
+    color: white;
+    border-radius: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+button:hover {
+    color: black;
+    background-color: #ffffff99;
+}
+
+.si {
+    background-color: chartreuse;
+}
+
+.no {
+    background-color: chocolate;
+}
+
+.botones {
+    width: 80%;
+    height: 80px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.regresar-menu {
+    display: none;
+    height: 55px;
+    width: 20%;
+    border-radius: 5px;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #ffffffd2;
+    cursor: pointer;
+    font-size: 0.9em;
+    text-decoration: none;
+}
+
+@media(max-width:580px) {
+    .contenedor-preguntas {
+        width: 80%;
+        font-size: 1.3em;
+    }
+
+    button {
+        width: 85%;
+    }
+
+    .control-botones {
+        width: 40%;
+    }
+
+    .regresar-menu {
+        font-size: 0.9em;
+        width: 30%;
+    }
+
+}
+
+@media(max-width:755px) {
+    .contenedor-preguntas {
+        width: 80%;
+        font-size: 1.3em;
+    }
+
+}
+
+@media(max-width:955px) {
+    .contenedor-preguntas {
+        width: 80%;
+        font-size: 1.3em;
+    }
+
+}
+
+@media (max-width: 800px) {
+    button {
+        font-size: 0.6em;
+    }
+
+    .control-botones {
+        font-size: 0.8em;
+        width: 30%;
+    }
+
+    .contenedor-preguntas {
+        width: 80%;
+        font-size: 1.3em;
+    }
+
+    .regresar-menu {
+        font-size: 0.7em;
+        width: 30%;
+    }
+}
+
+@media(max-width:110px) {
+    .contenedor-preguntas {
+        font-size: 1.1em;
+    }
+
+}
+
+@media only screen and (max-device-width:1024px) {
+    main {
+        height: 110vh;
+    }
+
+    .contenedor-preguntas {
+        width: 80%;
+        height: 70vh;
+    }
+
+    .contenedor-preguntas button {
+        width: 80%;
+        font-size: 1em;
+        height: 120px;
+        margin-bottom: 30px;
+    }
+
+    .contenedor-preguntas h2 {
+        font-size: 55px;
+        margin-bottom: 30px;
+    }
+
+    .titulo {
+        height: auto;
+    }
+
+    .titulo h1 {
+        padding-top: 50px;
+        font-family: 'Press Start 2P', cursive;
+        font-size: 3em;
+    }
+
+    .titulo p {
+        font-size: 2em;
+    }
+
+    .botones>a {
+        margin-top: 20px;
+        height: 100px;
+        width: 40%;
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-device-width:768px) {
+    .contenedor-preguntas {
+        width: 80%;
+        height: 90vh;
+        margin-top: 130px;
+    }
+
+    .contenedor-preguntas button {
+        width: 80%;
+        font-size: 0.8em;
+        height: 100px;
+    }
+
+    .contenedor-preguntas h2 {
+        font-size: 45px;
+        margin-bottom: 30px;
+    }
+
+    .titulo h1 {
+        padding-bottom: 30px;
+        font-family: 'Press Start 2P', cursive;
+        font-size: 2.5em;
+    }
+
+    .titulo p {
+        font-size: 2em;
+    }
+
+    .botones>a {
+        height: 80px;
+        width: 40%;
+        font-size: 30px;
+    }
+
+    main {
+        height: 110vh;
+    }
+}
+
+@media only screen and (max-device-width:540px) {
+    .contenedor-preguntas {
+        width: 80%;
+        height: 80vh;
+        margin-top: 150px;
+    }
+
+    .contenedor-preguntas button {
+        width: 80%;
+        font-size: 0.6em;
+        height: 70px;
+    }
+
+    .contenedor-preguntas h2 {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+
+    .titulo h1 {
+        padding-top: 20px;
+        font-family: 'Press Start 2P', cursive;
+        font-size: 1.9em;
+    }
+
+    .titulo p {
+        font-size: 1.2em;
+    }
+
+    .botones>a {
+        height: 50px;
+        width: 40%;
+        font-size: 25px;
+    }
+
+    main {
+        height: 110vh;
+    }
+}
+
+@media only screen and (max-device-width:414px) {
+    .contenedor-preguntas {
+        width: 80%;
+        height: 80vh;
+        margin-top: 70px;
+    }
+
+    .contenedor-preguntas button {
+        width: 80%;
+        font-size: 0.5em;
+        height: 70px;
+        margin-bottom: 10px;
+    }
+
+    .contenedor-preguntas h2 {
+        font-size: 25px;
+        margin-bottom: 15px;
+    }
+
+    .titulo h1 {
+        padding-bottom: 30px;
+        font-family: 'Press Start 2P', cursive;
+        font-size: 1.5em;
+    }
+
+    .titulo p {
+        font-size: 1.2em;
+    }
+
+    .botones>a {
+        height: 50px;
+        width: 40%;
+        font-size: 15px;
+    }
+
+    main {
+        height: 110vh;
+    }
+}
+
+@media only screen and (max-device-width:375px) {
+    .contenedor-preguntas {
+        margin-top: 30px;
+    }
+
+    .contenedor-preguntas button {
+        height: 55px;
+        font-size: 0.4em;
+        margin-bottom: 10px;
+    }
+
+    .contenedor-preguntas h2 {
+        font-size: 1.1em;
+    }
+
+    .titulo h1 {
+        padding-bottom: 15px;
+        font-size: 1.3em;
+    }
+
+    .titulo p {
+        font-size: 1em;
+    }
+
+    .botones>a {
+        font-size: 15px;
+        height: 40px;
+    }
+
+}
+
+@media only screen and (max-device-width:360px) {
+
+    .contenedor-preguntas button {
+        height: 55px;
+    }
+
+    .contenedor-preguntas h2 {
+        font-size: 20px;
+    }
+
+    .titulo h1 {
+        padding-bottom: 20px;
+        font-size: 1.3em;
+    }
+
+    .titulo p {
+        font-size: 0.9em;
+    }
+
+    .botones>a {
+        font-size: 20px;
+        height: 45px;
+    }
+
+}
+
+@media only screen and (max-device-width:320px) {
+
+    main {
+        height: 100vh;
+    }
+
+    .contenedor-preguntas {
+        height: 60vh;
+        margin-top: 40px;
+    }
+
+    .contenedor-preguntas button {
+        height: 45px;
+        font-size: 0.3em;
+    }
+
+    .contenedor-preguntas h2 {
+        font-size: 19px;
+    }
+
+    .titulo h1 {
+        padding-bottom: 20px;
+        font-size: 1.1em;
+    }
+
+    .titulo p {
+        font-size: 0.9em;
+    }
+
+    .botones>a {
+        font-size: px;
+        height: 45px;
+    }
+
+
+
+    @media only screen and (max-device-width:280px) {
+        .contenedor-preguntas {
+            margin-top: 50px;
+        }
+
+        .contenedor-preguntas button {
+            height: 50px;
+            font-size: 20px;
+        }
+
+        .contenedor-preguntas h2 {
+            font-size: 20px;
+        }
+
+        .titulo {
+            margin-bottom: 0px;
+        }
+
+        .titulo h1 {
+            padding-bottom: 20px;
+            font-size: 1.8em;
+        }
+
+        .titulo p {
+            font-size: 1em;
+        }
+
+        .botones>a {
+            font-size: 20px;
+            height: 45px;
+        }
+    }
+}
+
+@media only screen and (max-device-width:320px) {
+
+    main {
+        height: 100vh;
+    }
+
+    .contenedor-preguntas {
+        height: 60vh;
+        margin-top: 40px;
+    }
+
+    .contenedor-preguntas button {
+        height: 45px;
+        font-size: 0.3em;
+    }
+
+    .contenedor-preguntas h2 {
+        font-size: 19px;
+    }
+
+    .titulo h1 {
+        padding-bottom: 20px;
+        font-size: 1.1em;
+    }
+
+    .titulo p {
+        font-size: 0.9em;
+    }
+
+    .botones>a {
+        font-size: px;
+        height: 45px;
+    }
+
+}
+
+@media only screen and (max-device-width:280px) {
+    .contenedor-preguntas {
+        margin-top: 70px;
+    }
+
+    .contenedor-preguntas button {
+        height: 50px;
+        font-size: 15px;
+    }
+
+    .contenedor-preguntas h2 {
+        font-size: 20px;
+    }
+
+    .titulo h1 {
+        padding-bottom: 20px;
+        font-size: 1.3em;
+        text-align: center;
+    }
+
+    .titulo p {
+        font-size: 0.9em;
+    }
+
+    .botones>a {
+        font-size: 15px;
+        height: 40px;
+    }
+}
